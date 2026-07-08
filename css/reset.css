@@ -23,7 +23,7 @@ a{
     color : inherit;    
 }
  
-images {
+img {
     display : block; 
     max-width: 100%;   
 }

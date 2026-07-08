@@ -425,31 +425,38 @@ header{
 }
 
 .tm{
-    width: 658px;
-    height: 850px;
+    width: 39%;
+    max-width: 658px;
+    aspect-ratio: 658 / 850;
     position: relative;
+    flex-shrink: 0;
 }
 
 .taa{
-    width: 658px;
-    height: 710px;
-    object-fit: cover;
-    top: 100px;
     position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.taa img{
+    width: 100%;
+    display: block;
 }
 
 .ta{
     position: absolute;
-    width: 800px;
-    object-fit: cover;
-    left: 280px;
+    width: 167%;
+    left: -42%;
     bottom: -20px;
-    transform: translateX(-50%);
 }
 
+.ta img{
+    width: 100%;
+    display: block;
+}
 .t{
     width: 510px;
-    height: 850px;
+    height: 1000px;
     display: flex;
     align-items: center;
     justify-content: flex-end; 

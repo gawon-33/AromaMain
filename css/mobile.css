@@ -1,6 +1,6 @@
 /* =========================================================
    Aroma — Mobile Stylesheet
-   Load AFTER style.css & reset.css
+   Load AFTER reset.css & style.css
    ========================================================= */
 
 @media (max-width: 768px){
@@ -94,7 +94,7 @@
         padding: 56px 24px 60px;
     }
 
-    .brandimg{
+    .brandimages{
         width: 84%;
         max-width: 300px;
         margin-left: 0;
@@ -103,7 +103,7 @@
         overflow: hidden;
     }
 
-    .brandimg img{
+    .brandimages img{
         width: 100%;
         height: 210px;
         object-fit: cover;
@@ -159,12 +159,14 @@
         padding: 0 24px;
     }
 
-    .scentimg{
+    .scentimages{
         margin-top: 32px;
         flex-direction: column;
         align-items: center;
         gap: 14px;
         padding: 0 24px;
+        display: flex;
+        justify-content: center;
     }
 
     .item{
@@ -345,14 +347,15 @@
         flex-direction: column;
     }
 
-    .useimg{
+    .useimages{
         width: 100%;
         height: auto;
         padding: 56px 24px 0;
+        display: flex;
         justify-content: center;
     }
 
-    .useimg img{
+    .useimages img{
         width: 84%;
         max-width: 280px;
         height: 260px;
@@ -392,7 +395,7 @@
         gap: 16px;
     }
 
-    .usimg{
+    .usimages{
         width: calc(50% - 8px);
     }
 
@@ -541,6 +544,6 @@
     .dial{ font-size: 26px; }
     .ri{ font-size: 19px; }
 
-    .usimg{ width: 100%; }
+    .usimages{ width: 100%; }
     .us img{ height: 200px; }
 }
