@@ -19,12 +19,13 @@
 
     .top{
         height: 90px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .logo{
         width: auto;
         font-size: 26px;
+        margin-right: auto;
     }
 
     .main{
@@ -33,7 +34,8 @@
 
     .search{
         width: auto;
-        margin-right: 0;
+        margin-right: 14px;
+        gap: 0;
     }
 
     .search span{
@@ -89,21 +91,23 @@
     .brand{
         height: auto;
         flex-direction: column;
-        padding: 60px 24px 70px;
+        padding: 56px 24px 60px;
     }
 
-    .brandimages{
-        width: 100%;
+    .brandimg{
+        width: 84%;
+        max-width: 300px;
         margin-left: 0;
-        margin-bottom: 36px;
+        margin-bottom: 32px;
         border-radius: 6px;
         overflow: hidden;
     }
 
-    .brandimages images{
+    .brandimg img{
         width: 100%;
-        height: 280px;
+        height: 210px;
         object-fit: cover;
+        object-position: 50% 35%;
         border-radius: 6px;
     }
 
@@ -141,7 +145,7 @@
     /* ---------- SCENT COLLECTION ---------- */
     .scent_wrap{
         height: auto;
-        padding: 70px 0 60px;
+        padding: 64px 0 72px;
     }
 
     .scent{
@@ -149,48 +153,49 @@
     }
 
     .sc{
-        font-size: 26px;
+        font-size: 24px;
         top: 0;
         text-align: center;
         padding: 0 24px;
     }
 
-    .scentimages{
-        margin-top: 36px;
+    .scentimg{
+        margin-top: 32px;
         flex-direction: column;
         align-items: center;
-        gap: 18px;
+        gap: 14px;
         padding: 0 24px;
     }
 
     .item{
-        width: 100%;
-        max-width: 420px;
-        height: 320px;
+        width: 84%;
+        max-width: 320px;
+        height: 240px;
         border-radius: 6px;
     }
 
-    .item images{
+    .item img{
         filter: brightness(65%);
     }
 
     .item span{
         opacity: 1;
-        bottom: 30px;
-        font-size: 20px;
+        bottom: 24px;
+        font-size: 17px;
     }
 
     .item span b{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     /* ---------- MEMO / QUOTE ---------- */
     .memo_wrap{
-        height: 220px;
+        height: 160px;
+        border-top: 1px solid rgba(255,255,255,0.06);
     }
 
     .memo{
-        height: 220px;
+        height: 160px;
         top: 0;
         display: flex;
         flex-direction: column;
@@ -199,12 +204,14 @@
     }
 
     .mem{
-        font-size: 18px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
         margin-bottom: 8px;
     }
 
     .me{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     /* ---------- PRODUCT DETAIL ---------- */
@@ -264,10 +271,11 @@
 
     .tm{
         width: 100%;
-        max-width: 320px;
-        height: 380px;
+        max-width: 220px;
+        height: 260px;
         order: 2;
         margin: 0 auto;
+        position: relative;
     }
 
     .taa{
@@ -280,21 +288,23 @@
         justify-content: center;
     }
 
-    .taa images{
-        width: 90%;
-        height: 90%;
+    .taa img{
+        width: 92%;
+        height: 92%;
         object-fit: contain;
     }
 
     .ta{
-        width: 62%;
+        width: 52%;
         height: auto;
         left: 50%;
-        bottom: -6%;
-        transform: translateX(-50%);
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, -46%);
+        filter: drop-shadow(0 8px 16px rgba(0,0,0,0.18));
     }
 
-    .ta images{
+    .ta img{
         width: 100%;
         height: auto;
         object-fit: contain;
@@ -335,17 +345,17 @@
         flex-direction: column;
     }
 
-    .useimages{
+    .useimg{
         width: 100%;
         height: auto;
-        padding: 60px 24px 0;
+        padding: 56px 24px 0;
         justify-content: center;
     }
 
-    .useimages images{
-        width: 100%;
-        max-width: 360px;
-        height: 340px;
+    .useimg img{
+        width: 84%;
+        max-width: 280px;
+        height: 260px;
     }
 
     .usetext{
@@ -382,13 +392,13 @@
         gap: 16px;
     }
 
-    .usimages{
+    .usimg{
         width: calc(50% - 8px);
     }
 
-    .us images{
+    .us img{
         width: 100%;
-        height: 180px;
+        height: 150px;
     }
 
     .step{
@@ -510,7 +520,7 @@
         gap: 16px;
     }
 
-    .ben images{
+    .ben img{
         width: 32px;
         height: 32px;
     }
@@ -531,6 +541,6 @@
     .dial{ font-size: 26px; }
     .ri{ font-size: 19px; }
 
-    .usimages{ width: 100%; }
-    .us images{ height: 220px; }
+    .usimg{ width: 100%; }
+    .us img{ height: 200px; }
 }
