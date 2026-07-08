@@ -1,0 +1,536 @@
+/* =========================================================
+   Aroma — Mobile Stylesheet
+   Load AFTER style.css & reset.css
+   ========================================================= */
+
+@media (max-width: 768px){
+
+    /* ---------- HERO / HEADER ---------- */
+    .main_wrap{
+        height: 100vh;
+        min-height: 640px;
+    }
+
+    header{
+        height: 100vh;
+        min-height: 640px;
+        padding: 0 24px;
+    }
+
+    .top{
+        height: 90px;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: auto;
+        font-size: 26px;
+    }
+
+    .main{
+        display: none; /* full nav collapses; logo + icons remain for a clean mobile bar */
+    }
+
+    .search{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .search span{
+        display: none;
+    }
+
+    .sign{
+        width: auto;
+        gap: 14px;
+    }
+
+    .sign a{
+        font-size: 12px;
+        letter-spacing: 0.3px;
+    }
+
+    .bottom{
+        height: calc(100vh - 90px);
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 60px;
+    }
+
+    .bottombox{
+        position: static;
+        width: 100%;
+    }
+
+    .bo{
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .bo::before{
+        height: 34px;
+        top: 20px;
+    }
+
+    .b{
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .b b{
+        font-size: 15px;
+    }
+
+    /* ---------- BRAND ---------- */
+    .brand_wrap{
+        height: auto;
+    }
+
+    .brand{
+        height: auto;
+        flex-direction: column;
+        padding: 60px 24px 70px;
+    }
+
+    .brandimg{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 36px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .brandimg img{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .brandtext{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .from{
+        font-size: 15px;
+        margin-bottom: 14px;
+        padding-bottom: 8px;
+    }
+
+    .fro{
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .fr{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    .f{
+        font-size: 15px;
+    }
+
+    .f::after{
+        left: 60px;
+        width: 90px;
+    }
+
+    /* ---------- SCENT COLLECTION ---------- */
+    .scent_wrap{
+        height: auto;
+        padding: 70px 0 60px;
+    }
+
+    .scent{
+        height: auto;
+    }
+
+    .sc{
+        font-size: 26px;
+        top: 0;
+        text-align: center;
+        padding: 0 24px;
+    }
+
+    .scentimg{
+        margin-top: 36px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 0 24px;
+    }
+
+    .item{
+        width: 100%;
+        max-width: 420px;
+        height: 320px;
+        border-radius: 6px;
+    }
+
+    .item img{
+        filter: brightness(65%);
+    }
+
+    .item span{
+        opacity: 1;
+        bottom: 30px;
+        font-size: 20px;
+    }
+
+    .item span b{
+        font-size: 15px;
+    }
+
+    /* ---------- MEMO / QUOTE ---------- */
+    .memo_wrap{
+        height: 220px;
+    }
+
+    .memo{
+        height: 220px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 24px;
+    }
+
+    .mem{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .me{
+        font-size: 20px;
+    }
+
+    /* ---------- PRODUCT DETAIL ---------- */
+    .product_wrap{
+        height: auto;
+    }
+
+    .product{
+        height: auto;
+    }
+
+    .det{
+        height: auto;
+        padding: 60px 24px 40px;
+    }
+
+    .detext{
+        top: 0;
+    }
+
+    .de{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .da{
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .da::after{
+        top: 60px;
+        height: 90px;
+    }
+
+    .dot{
+        height: auto;
+        flex-direction: column;
+        padding: 90px 24px 60px;
+        gap: 60px;
+    }
+
+    .tal{
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    .ess{
+        font-size: 19px;
+    }
+
+    .es{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .tm{
+        width: 100%;
+        max-width: 320px;
+        height: 380px;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .taa{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .taa img{
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
+    .ta{
+        width: 62%;
+        height: auto;
+        left: 50%;
+        bottom: -6%;
+        transform: translateX(-50%);
+    }
+
+    .ta img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .t{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        order: 3;
+    }
+
+    .ttext{
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .base{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .base b{
+        font-size: 17px;
+    }
+
+    /* ---------- HOW TO USE ---------- */
+    .use_wrap{
+        height: auto;
+    }
+
+    .use{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .useimg{
+        width: 100%;
+        height: auto;
+        padding: 60px 24px 0;
+        justify-content: center;
+    }
+
+    .useimg img{
+        width: 100%;
+        max-width: 360px;
+        height: 340px;
+    }
+
+    .usetext{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        padding: 0 24px 60px;
+    }
+
+    .dialy{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .dial{
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .dai{
+        font-size: 16px;
+    }
+
+    .dr{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+    .us{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .usimg{
+        width: calc(50% - 8px);
+    }
+
+    .us img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .step{
+        font-size: 15px;
+        margin-top: 14px;
+    }
+
+    .pre{
+        font-size: 13px;
+    }
+
+    .pr{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    /* ---------- RITUAL / EXPERIENCE ---------- */
+    .rit_wrap{
+        height: 560px;
+    }
+
+    .rit{
+        height: 560px;
+    }
+
+    .ritext{
+        top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 24px;
+    }
+
+    .rie{
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+
+    .ri{
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .r{
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+
+    .re{
+        font-size: 15px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .footer_wrap{
+        height: auto;
+    }
+
+    footer{
+        height: auto;
+        flex-direction: column;
+        padding: 50px 24px 40px;
+    }
+
+    .ff{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fo{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .foa{
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .fos{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .copy{
+        font-size: 12px;
+    }
+
+    .fea{
+        width: 100%;
+        margin-left: 0;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .infe{
+        width: 100%;
+    }
+
+    .fer{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .fey{
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .bott{
+        margin-top: 20px;
+        justify-content: flex-start;
+    }
+
+    .ben{
+        top: 0;
+        right: 0;
+        gap: 16px;
+    }
+
+    .ben img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .bev{
+        margin-top: 0;
+        text-align: left;
+        font-size: 13px;
+    }
+}
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width: 400px){
+
+    .bo{ font-size: 28px; }
+    .fro{ font-size: 22px; }
+    .de{ font-size: 24px; }
+    .dial{ font-size: 26px; }
+    .ri{ font-size: 19px; }
+
+    .usimg{ width: 100%; }
+    .us img{ height: 220px; }
+}
